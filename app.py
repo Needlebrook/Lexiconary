@@ -1,11 +1,9 @@
 from flask import Flask, render_template, request, redirect, url_for
 import requests
-from bs4 import BeautifulSoup
-import html
 import json
 import re
 import datetime
-import random
+
 
 app = Flask(__name__)
 app.config["TEMPLATES_AUTO_RELOAD"] = True
