@@ -1,0 +1,200 @@
+
+/*---BASE STYLE---*/
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url('/static/parchment.jpg') !important;
+  font-family: "Georgia", "Times New Roman", serif;
+  color: #2b2b2b;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  background-blend-mode: overlay;
+  background-color: #f7f3ea;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: -1;
+}
+
+main {
+  flex: 1;
+}
+
+/*---LETTERING---*/
+h1, h2, h3, h4, h5 {
+  font-family: "Georgia", serif;
+  letter-spacing: 0.5px;
+  color: #2a2a2a;
+}
+
+.book-subtitle {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #5a3b2d;
+}
+
+/*---CONTAINERS---*/
+.card {
+  border: 1px solid #e3d5c3 !important;
+  border-radius: 12px;
+  background: rgba(255, 253, 247, 0.82);
+  backdrop-filter: blur(2px);
+  padding: 1rem 1.3rem;
+  box-shadow: 
+    0 15px 25px rgba(0, 0, 0, 0.25),
+    0 10px 25px rgba(0, 0, 0, 0.05),
+    inset 0 0 40px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: -12px;
+  width: 18px;
+  height: 40px;
+  background: linear-gradient(#b71c1c, #7f0b0b);
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+  opacity: 0.85;
+}
+
+.card-title {
+  font-family: "Georgia", serif;
+  font-weight: bold;
+  border-bottom: 1px solid #e6dccb;
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+}
+
+.card-title::first-letter {
+  font-size: 2.4rem;
+  font-weight: bold;
+  float: left;
+  line-height: 0.9;
+  padding-right: 6px;
+  color: #7a3519;
+}
+
+.card-body p:first-letter {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #6e512f;
+}
+
+/*---DECORATIONS---*/
+.page-column {
+  border-left: 3px solid rgba(70, 40, 20, 0.35);
+  padding-left: 1.5rem;
+  margin-left: 1rem;
+}
+
+.page-curl {
+  position: relative;
+}
+
+.page-curl::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(
+    ellipse at bottom right,
+    rgba(0, 0, 0, 0.25) 0%,
+    rgba(0, 0, 0, 0.05) 40%,
+    rgba(0, 0, 0, 0) 70%
+  );
+  pointer-events: none;
+}
+
+/*---FORM & SEARCH---*/
+.search-input,
+#search-inline {
+  border-radius: 999px;
+  width: 680px;
+  max-width: 88vw;
+  border: 1px solid #d9cbb7;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  background: #fffdf7;
+  padding-left: 20px;
+}
+
+.form-control:focus,
+.btn:focus {
+  box-shadow: none !important;
+  outline: none;
+}
+
+/*---BUTTONS---*/
+.btn-primary {
+  background: #84613a !important;
+  border: none !important;
+  letter-spacing: 0.3px;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #6e512f !important;
+}
+
+/*---HEADER & FOOTER---*/
+#top-banner {
+  background: #6c4fb5 !important;
+  color: #f7f3ea !important;
+}
+
+#top-banner a {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.footer-banner {
+  background: linear-gradient(120deg, #84613a, #bd9363);
+  color: #fffdf7;
+}
+
+.footer-banner a {
+  color: #fffdf7;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/*---CHART---*/
+#ngram-chart {
+  border: 1px solid #e6dccb;
+  padding: 10px;
+  border-radius: 8px;
+  background: #fffdf7;
+}
+
+/*---RESPONSIVENESS---*/
+@media (max-width: 768px) {
+  .card {
+    padding: 0.75rem 1rem;
+  }
+  
+  .page-column {
+    padding-left: 1rem;
+    margin-left: 0.5rem;
+  }
+  
+  .search-input,
+  #search-inline {
+    width: 100%;
+    max-width: 100%;
+  }
+}
