@@ -65,7 +65,7 @@ Results are presented in distinct parchment-styled cards with:
 
 ## 🖼 Screenshots
 
-<img width="926" height="454" alt="Screenshot 2025-12-09 203315" src="https://github.com/user-attachments/assets/dfc7f996-cf50-4f5e-907a-fbe207469409" />
+<img width="926" height="454" alt="Screenshot 2025-12-12 142751" src="https://github.com/user-attachments/assets/894003ed-d77a-4b2a-b643-269fee300da0" />
 <img width="926" height="452" alt="Screenshot 2025-12-09 203126" src="https://github.com/user-attachments/assets/8e723b0e-ee21-44c5-bdb3-0caa53684744" />
 <img width="923" height="365" alt="Screenshot 2025-12-09 203237" src="https://github.com/user-attachments/assets/979ac2b4-19b3-49c6-8c4e-f0834725711a" />
 <img width="923" height="389" alt="Screenshot 2025-12-09 203150" src="https://github.com/user-attachments/assets/3870bc20-ef31-4959-a1ea-16116e8417e8" />
