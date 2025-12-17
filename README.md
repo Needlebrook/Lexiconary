@@ -1,9 +1,7 @@
 
 # Lexiconary: A Book-Style Word Explorer 📚
 
-> *CS50x Final Project by Celia Victor*
-
-Video Demo: https://youtu.be/BcwUYVedf18
+> *CS50x Final Project by Celia Victor
 
 Lexiconary is a Flask-powered web application that brings together definitions, etymology, encyclopedia summaries, and historical usage data into one book-like interface.
 It is designed to feel warm, readable, & “dictionary-like,” blending modern API integration with parchment-inspired styling.
